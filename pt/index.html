@@ -157,7 +157,7 @@ alert(<span class="str">"Hypotenuse is: "</span> + dist);</pre>
         </div>
     </div>
     <div class="copyright">
-        Esta tradu&#231;&#227;o foi feita por <a href=#>Diullei Gomes</a> (<a href=#>@diullei</a>) e mantida em <a href=#>XXXXXX</a>. Acesse a p&#225;gina original <a href=#>aqui</a>.<br>
+        Esta tradu&#231;&#227;o foi feita por <a href="https://github.com/Diullei">Diullei Gomes</a> (<a href="http://twitter.com/diullei">@diullei</a>) e mantida em <a href=#>http://diullei.github.com/TypeScript-ptBR/pt/</a>. Acesse a p&#225;gina original <a href="http://www.typescriptlang.org/">aqui</a>.<br>
     </div>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
