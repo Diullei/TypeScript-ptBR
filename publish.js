@@ -42,7 +42,7 @@ fs.readdirSync('.').forEach(function(file) {
 	fileContent = fs.readFileSync(file, 'binary');
 	var out = _.template(fileContent)($$);
 
-	fs.writeFile('pt\\' + file.substr(0, file.lastIndexOf('.') - 1) + '.html', out.toString('binary'), function(err) {
+	fs.writeFile('pt\\' + file.substr(0, file.lastIndexOf('.')) + '.html', out.toString('binary'), function(err) {
 	    if(err) {
 	        console.log(err);
 	    }
