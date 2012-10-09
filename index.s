@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <title>Bem vindo ao TypeScript</title>
-    <link type="text/css" rel="stylesheet" href="css/tsweb.css">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon.ico" type="image/vnd.microsoft.icon" sizes="48x48">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon16.png" type="image/png" sizes="16x16">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon48.png" type="image/png" sizes="48x48">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon64.png" type="image/png" sizes="64x64">
-    <link rel="icon" href="http://www.typescriptlang.org/favicon128.png" type="image/png" sizes="128x128">
-</head>
-<body>
-    <div id="nav">
-        <div class="centered-container">
-            <div class="clearfix">
-                <a id="homelink" class="selected" href="index.html" title="TypeScript">
-                    <div>TypeScript</div>
-                </a>
-                <a id="tutorial-link" class="minor" href="http://www.typescriptlang.org/Tutorial" title="Learn TypeScript with a Guided Tutorial">Aprenda</a>
-                <a id="playground-link" class="minor" href="http://www.typescriptlang.org/Playground" title="Play with TypeScript in the Playground">Experimente</a>
-                <a id="dl-link" class="minor" href="#Download" title="Get TypeScript">Baixe</a>
-                <a id="samples-link" class="minor" href="http://www.typescriptlang.org/Samples" title="See TypeScript in action in these samples">Exemplos</a>
-                <a id="community-link" class="minor" href="http://www.typescriptlang.org/#Community" title="Get Involved">F&#243;rum</a>
-            </div>
-        </div>
-    </div>
+{{=layout.topo}}
+{{=layout.menu}}
+
     <div id="main-callout">
         <h1>
             TypeScript &#233; uma linguagem para desenvolvimento JavaScript em larga escala.<br>
@@ -156,9 +129,6 @@ alert(<span class="str">"Hypotenuse is: "</span> + dist);</pre>
             </div>
         </div>
     </div>
-    <div class="copyright">
-        Esta tradu&#231;&#227;o foi feita por <a href="https://github.com/Diullei">Diullei Gomes</a> (<a href="http://twitter.com/diullei">@diullei</a>) e mantida em <a href=#>http://diullei.github.com/TypeScript-ptBR/pt/</a>. Acesse a p&#225;gina original <a href="http://www.typescriptlang.org/">aqui</a>.<br>
-    </div>
 
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/Panorama.js"></script>
@@ -224,5 +194,5 @@ alert(<span class="str">"Hypotenuse is: "</span> + dist);</pre>
             }
         });
     </script>
-
-</body></html>
+    
+{{=layout.rodape}}
