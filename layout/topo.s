@@ -12,6 +12,10 @@
     <link rel="icon" href="http://www.typescriptlang.org/favicon48.png" type="image/png" sizes="48x48">
     <link rel="icon" href="http://www.typescriptlang.org/favicon64.png" type="image/png" sizes="64x64">
     <link rel="icon" href="http://www.typescriptlang.org/favicon128.png" type="image/png" sizes="128x128">
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/Panorama.js"></script>
+    
 </head>
 <body>
 
