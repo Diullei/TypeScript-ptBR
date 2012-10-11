@@ -29,9 +29,9 @@
                 </a>
                 <a id="tutorial-link" class="minor" href="tutorial.html" title="Aprenda TypeScript com guias e tutoriais">Aprenda</a>
                 <a id="playground-link" class="minor" href="http://www.typescriptlang.org/Playground" title="Experimente o TypeScript no TypeScript Playground">Experimente</a>
-                <a id="dl-link" class="minor" href="http://diullei.github.com/TypeScript-ptBR/pt/index.html#Download" title="Baixe TypeScript">Baixe</a>
+                <a id="dl-link" class="minor" href="/TypeScript-ptBR/pt/#Download" title="Baixe TypeScript">Baixe</a>
                 <a id="samples-link" class="minor" href="http://www.typescriptlang.org/Samples" title="Veja o TypeScript em a&#231;&#227;o">Exemplos</a>
-                <a id="community-link" class="minor" href="http://diullei.github.com/TypeScript-ptBR/pt/index.html#Community" title="Se envolva com a comunidade TypeScript">F&#243;rum</a>
+                <a id="community-link" class="minor" href="/TypeScript-ptBR/pt/#Community" title="Se envolva com a comunidade TypeScript">F&#243;rum</a>
             </div>
         </div>
     </div>
@@ -46,20 +46,19 @@
 <div class="intro">
     <div class="quick-start">
         <div class="centered-container">
-            <h2>Quick Start</h2>
+            <h2>Primeiros passos</h2>
             <div class="sample first clearfix">
                 <div class="left">
-                    <p>Let's get started by building a simple web application with TypeScript.  
-                       There are two main ways to get the TypeScript tools: 
-                        via the Node.js package manager (npm) or 
-                        by installing the TypeScript for Visual Studio 2012 plugin.  
+                    <p>
+				Vamos iniciar instalando o TypeScript. Podemos instalar o TypeScript de duas formas diferentes.
+				Podemos utilizar o gerenciador de pacotes do Node.js (npm) ou instalar o plugin do TypeScript para Visual Studio 2012.
                     </p>
                 </div>
                 <div class="code">
-For Visual Studio 2012 users:<pre><a href="http://go.microsoft.com/fwlink/?LinkID=266563" target="_blank">Install TypeScript for Visual Studio 2012</a>
+Para usu&#225;rios do Visual Studio 2012:<pre><a href="http://go.microsoft.com/fwlink/?LinkID=266563" target="_blank">Instale o plugin do TypeScript no Visual Studio 2012</a>
     </pre>
                     <br>
-For NPM users:
+Para usu&#225;rios Node.js utilizando NPM:
                     <pre>&gt; npm install -g typescript
                     </pre>
                 </div>
@@ -67,7 +66,7 @@ For NPM users:
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>In your editor, type the following JavaScript code in <tt>greeter.ts</tt>:</p>
+                    <p>No seu editor escreve o seguinte c&#243;digo e salve em um arquivo chamado <tt>greeter.ts</tt>:</p>
                 </div>
                 <div class="code">
                     <pre id="sample1"><span class="kw">function</span> greeter(person) {
@@ -78,16 +77,16 @@ For NPM users:
 
 document.body.innerHTML = greeter(user);
                     </pre>
-                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex1">Open in Playground</a>
+                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex1">Executar online</a>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>We used a .ts extension, but this code is just JavaScript.  You could have copy/pasted this straight
-                        out of an existing JavaScript app.
+				
+                    <p>Usamos a extens&#227;o .ts para escrever c&#243;digo TypeScript.
                     </p>
-                    <p>At the command line, run the TypeScript compiler:</p>
+                    <p>Execute o TypeScript com a seguinte linha de comando:</p>
                 </div>
                 <div class="code">
                     <pre>&gt; tsc greeter.ts</pre>
@@ -96,12 +95,12 @@ document.body.innerHTML = greeter(user);
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>The result will be a file <tt>greeter.js</tt> which contains the same JavaScript that you fed in
-                        (Note: In current builds, formatting and comments are not fully preserved, this is temporary).  We're 
-                        up and running using TypeScript in our JavaScript app!
+                    <p>Como resultado da compila&#231;&#227;o do TypeScript ser&#225; gerado um arquivo chamado <tt>greeter.js</tt> que cont&#233;m o mesmo c&#243;digo JavaScript do arquivo anterior.
+					(Repare que a formata&#231;&#227;o e os coment&#225;rios n&#227;o ser&#227;o preservados). Agora podemos executar o c&#243;digo gerado pelo compilador do TypeScript em nosso pr&#243;prio ambiente JavaScript.
                     </p>
-                    <p>Now we can start taking advantage of some of the new tools TypeScript offers.  Add a <tt>": string"</tt>
-                        type annotation to the 'person' function argument as shown here:</p>
+					
+                    <p>Vamos come&#231;ar a adicionar algumas sintaxes espec&#237;ficas do TypeScript ao nosso c&#243;digo para entender o que o TypeScript nos oferece.
+					Adicione o codigo <tt>": string"</tt> ao argumento 'person' da fun&#231;&#227;o <tt>greeter</tt> como exibido abaixo:</p>
                 </div>
                 <div class="code">
                     <pre id="sample2"><span class="kw">function</span> greeter(person: <span class="type">string</span>) {
@@ -112,15 +111,16 @@ document.body.innerHTML = greeter(user);
 
 document.body.innerHTML = greeter(user);
                     </pre>
-                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex2">Open in Playground</a>
+                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex2">Executar online</a>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Type annotations in TypeScript are lightweight ways to record the intended contract of the function
-                        or variable.  In this case, we intend the <tt>greeter</tt> function to be called with a single string 
-                        parameter.  We can try changing the call <tt>greeter</tt> to pass an array instead:
+                    <p>
+					Repare que esta altera&#231;&#227;o de c&#243;digo define o tipo do arqumento person para string. Chamamos este tipo de defini&#231;&#227;o de tipo de "Type anotation" 
+					e com ele &#233; poss&#237;vel definir o tipo de vari&#225;veis e retornos de fun&#231;&#245;es. Nossa fun&#231;&#227;o <tt>greeter</tt> s&#243; ser&#225; chamada corretamente se passarmos uma string como argumento. Agora se tentarmos passar um tipo diferente como argumento o compilador do TypeScript ir&#225; reclamar e acusar erro.
+					Para entender isso vamos tentar passar um array como argumento. Veja o c&#243;digo:
                     </p>
                 </div>
                 <div class="code">
@@ -132,13 +132,13 @@ document.body.innerHTML = greeter(user);
 
 document.body.innerHTML = greeter(user);
                     </pre>
-                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex3">Open in Playground</a>
+                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex3">Executar online</a>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Re-compiling, you'll now see an error:</p>
+                    <p>Tente recompilar este c&#243;digo e voc&#234; ter&#225; o seguinte erro:</p>
                 </div>
                 <div class="code">
                     <pre>greeter.ts(7,26): Supplied parameters do not match any signature of call target</pre>
@@ -147,18 +147,16 @@ document.body.innerHTML = greeter(user);
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Similarly, try removing all the arguments to the <tt>greeter</tt> call.  TypeScript will let 
-                        you know that you have called this function with an unexpected number of parameters.  In both cases,
-                        TypeScript can offer static analysis based on both the structure of your code, and the type annotations
-                        you provide.
+				
+                    <p>Da mesma forma se tentarmos remover os argumentos da chamada da func&#227;o <tt>greeter</tt> o compilador do TypeScript ir&#225; informar um erro dizendo que esta fun&#231;&#227;o precisa de um argumento para ser chamada. Em todos os casos o compilador do TypeScript ir&#225; analizar o c&#243;digo de acordo com os seus tipos informados.
                     </p>
-                    <p>Notice that although there were errors, the <tt>greeter.js</tt> file is still created.  You can use
-                        TypeScript even if there are errors in your code.  But in this case, TypeScript is warning that your
-                        code will likely not run as expected.
+					
+                    <p>&#233; importante entender que mesmo com erros no c&#243;digo o compilador do TypeScript ir&#225; gerar o arquivo <tt>greeter.js</tt>. Voc&#234; pode usar o TypeScript mesmo se tiver erros em seu c&#243;digo, mas neste caso o TypeScript ir&#225; alertar que seu c&#243;igo poder&#225; funcionar de forma incorreta.
                     </p>
-                    <p>Let's develop our sample further.  Here we use an interface that describes objects that have a <tt>firstname</tt> and <tt>lastname</tt> field.
-                    This allows us to type not only by the name a structure has by also by the structure itself.  
-                    </p>
+					
+					<p>Agora vamos alterar mais uma vez nosso c&#243;digo. Vamos criar uma interface chamada Person que ir&#225; descrever um objeto que cont&#233;m os campo <tt>firstname</tt> e <tt>lastname</tt>. Isso ir&#225; nos permitir definir a estrutura do argumento da fun&#231;&#227;o <tt>greeter</tt>. Veja o c&#243;digo:
+					</p>
+					
                 </div>
                 <div class="code">
                     <pre id="sample4"><span class="kw">interface</span> Person {
@@ -174,17 +172,15 @@ document.body.innerHTML = greeter(user);
 
 document.body.innerHTML = greeter(user);
 </pre>
-                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex4">Open in Playground</a>
+                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex4">Executar online</a>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Finally, let's extend the example one last time with classes.  TypeScript supports the current ES6 proposal for class-based object-oriented programming. </p>
-                    <p>Here we create a <tt>Student</tt> class with a constructor and a few public fields.  Notice that classes and interfaces play well together, letting the programmer decide what 
-                    is the right level of abstraction.
-                    </p>
-                </div>
+					<p>Finalmente vamos ao uso das classes. O TypeScript suporta a cria&#231;&#227;o de classes baseada na proposta ES6.</p>
+					<p>Vamos criar uma classes chamada <tt>Student</tt> com um construtor e com alguns campos publicos.</p>
+				</div>
                 <div class="code">
                     <pre id="sample5"><span class="kw">class</span> Student {
     fullname : <span class="type">string</span>;
@@ -206,17 +202,16 @@ document.body.innerHTML = greeter(user);
 
 document.body.innerHTML = greeter(user);
 </pre>
-                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex5">Open in Playground</a>
+                    <a class="inplayground" href="http://www.typescriptlang.org/Playground/#ex5">Executar online</a>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Re-run <tt>tsc greeter.ts</tt> and you'll see the generated JavaScript is the same as the earlier
-                        code.  Classes in TypeScript are just a shorthand for the same prototype-based OO that is frequently
-                        used in JavaScript.
+									
+                    <p>Compile novamente o c&#243;digo usando <tt>tsc greeter.ts</tt> e veja que as classes em TypeScript s&#227;o apenas uma simplifica&#231;&#227;o da estrutura OO baseada em prot&#243;tipos que j&#225; conhecemos e utilizamos no JavaScript convencional.
                     </p>
-                    <p>Now - type the following in <tt>greeter.html</tt>:</p>
+                    <p>Para rodar o c&#243;digo final no navegador crie um arquivo html chamado <tt>greeter.html</tt> com o c&#243;digo abaixo:</p>
                 </div>
                 <div class="code">
                     <noscript>You will be unable to see this code sample because script is disabled in your browser.</noscript>
@@ -232,20 +227,16 @@ document.body.innerHTML = greeter(user);
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p>Open <tt>greeter.html</tt> in the browser to run your first simple TypeScript web application!</p>
+                    <p>Abra o arquivo <tt>greeter.html</tt> no seu navegador para ver em a&#231;&#227;o a sua primeira aplica&#231;&#227;o criada com TypeScript!</p>
                 </div>
             </div>
             <hr>
             <div class="sample clearfix">
                 <div class="left">
-                    <p><span class="strong">Optional:</span> Open <tt>greeter.ts</tt> in Visual Studio, or copy the code into the <a href="http://www.typescriptlang.org/Playground/#ex5" target="_blank">TypeScript playground</a>.  
-                        You can hover over identifiers to see their types.  Notice that in some cases these types are inferred automatically for you, 
-                        as with <tt>user</tt>.  Re-type the last line, and see completion lists and 
-                        parameter help based on the types of the DOM elements.  Put your cursor on the reference to the <tt>greeter</tt>
-                        function, and hit F12 to go to its definition.  Notice, too, that you can right click on a symbol and use 
-                        refactoring to rename the symbol.</p>
-                    <p>The type information provided works together with the tools to work with JavaScript at application scale.  For more examples of what's possible in TypeScript, see the <a href="http://www.typescriptlang.org/Samples">Samples</a> section of the website.
-                    </p>
+					<p><span class="strong">Opcionalmente:</span> abra o arquivo <tt>greeter.ts</tt> no visual studio ou copie seu conteudo para o <a href="http://www.typescriptlang.org/Playground/#ex5" target="_blank">TypeScript playground</a>.
+					Assim voc&#234; poder&#225; mover o mouse sobre os identificadores para visualizar seus tipo.</p>
+					
+					<p>Veja exemplos de aplica&#231;&#245;es escritas em TypeScript neste <a href="http://www.typescriptlang.org/Samples">link</a>.</p>
                 </div>
 <img src="img/greet_person.png" alt="Visual Studio picture" id="tutorialDemoImg">
             </div>
